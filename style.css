@@ -1,0 +1,38 @@
+.navbar{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: beige;
+    color: black;
+}
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+   
+}
+img{
+    height: 500px;
+    width: 100rem;
+    filter: brightness(1);
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.service{
+    background: gray;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+.home-img{
+    width: 400px;
+    
+    
+}
+
+

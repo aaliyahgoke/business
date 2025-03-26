@@ -79,10 +79,29 @@ img{
 }
 .office-img{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
     padding: 20px;
+}
+.text img{
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(o, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.text img :hover{
+    transform: scale(1.1);
+}
+.Read-more-btn{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
 }
 @media (max-width:768px) {
     .nav-link{

@@ -6,10 +6,11 @@ document.queryselectorAll('.read-more-btn').forEach(button=>{
 
         if(fullText.style.display===
      "none" || fullText.style.display ==="") {
-            fulllText.stlye.display =
+              fulllText.stlye.display =
      
-    "block" 
-
-        
-    })
-})
+    "block";    
+    } else {
+        fullText.stlye.display = "none";
+    }
+});
+});

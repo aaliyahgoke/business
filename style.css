@@ -1,3 +1,4 @@
+
 .navbar{
     display: flex;
     justify-content:right;
@@ -62,20 +63,34 @@ img{
     gap: 10px;
     padding: 20px;
 }
+.home_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
 .home-img{
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: auto;
    object-fit: cover;
    border-radius: 10px;
    transition: transform 0.3s ease-in-out;
+   margin-top: 10px;
 }
 .home-img :hover{
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(o, 0, 0, 0.2);
 }
 .text{
-    display: flex;
+    
     align-items: center;
+    background-color:white ;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(o, 0, 0, 0.1);
+    text-align: center;
 }
 .office-img{
     display: flex;
@@ -100,8 +115,24 @@ img{
     border: none;
     padding: 8px 15px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-top: 10px;
+    display: inline-block;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.Read-more-btn :hover {
+    background-color: deepskyblue;
+}
+.full-text{
+    display: none;
+    font-size: 14px;
+    color:#555;
+    margin-top: 10px;
+}
+.text p{
+    font-size: 16px;
+    color: #333;
 }
 @media (max-width:768px) {
     .nav-link{

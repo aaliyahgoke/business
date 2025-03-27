@@ -15,11 +15,15 @@
             <li><a href="service.html"> service</a></li>
             
         </ul>
-        <div class="hamburger">
-         <span></span>
-         <span></span>
-         <span></span>
-        </div>
+        <script>
+            const hamburger =
+            document.querySelector('.hamburger');
+            const navmenu = 
+            document.querySelector('.nav-link');
+            hamburger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+        </script>
     </nav>
     <img src="./image/img.jpeg" alt="img">
 </header>

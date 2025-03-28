@@ -13,7 +13,7 @@ body{
     padding: 15px 30px;
     background-color: beige;
     color: black;
-    width: 1070%;
+    width: 93%;
     max-width: 1070px;
 }
 h2{
@@ -99,6 +99,8 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+  
+    height: 100px;
 }
 .home-img{
     width: 100%;

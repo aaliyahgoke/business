@@ -15,6 +15,11 @@ body{
     color: black;
     width: 1070px;
 }
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .nav-link{
     list-style: none;
     display: flex;
@@ -56,12 +61,26 @@ img{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
 }
 .service{
     background: gray;
     padding: 20px;
     width: 250px;
     border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.service a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: gray;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
 }
 .home-img{
     display: flex;

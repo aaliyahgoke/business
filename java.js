@@ -15,6 +15,6 @@ document.queryselectorAll('.read-more-btn').forEach(button=>{
 });
 });
 function toggleMenu() {
-    const nav = document.getElementById("nav-links")
-    nav.classList.toggle("hidden")
+    const nav = document.getElementById("nav-link")
+    nav.classList.toggle("show-nav")
 }

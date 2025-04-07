@@ -21,41 +21,35 @@ h2{
     align-items: center;
     justify-content: center;
 }
-.nav-link{
+.navbar{
     list-style: none;
     display: flex;
     gap: 2rem;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
    
 }
-.nav-link li{
-    display: inline;
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
 }
-.nav-link a{
+.navbar ul li{
+    flex-direction: column;
+}
+.navbar ul li a{
     text-decoration: none;
     color:black;
     font-size: 18px;
-    transition: color o.3s;
 }
-.nav-link a:hover {
+.navbar ul li a:hover {
     color: skyblue;
+    text-decoration: underline;
 }
 .hamburger{
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    border: none;
-    height: 20px;
-    background-color: transparent;
-}
-.hamburger span{
-    width: 30px;
-    height: 3px;
-    background: white;
-    display: block;
-    transition:0.3s ease-in-out;
-
-}
-.menu-icon{
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -64,21 +58,13 @@ h2{
     margin: 10px;
     background-color: aqua;
 }
-.hidden{
-    display: none;
-}
-#nav-links{
-    display: flex;
-    gap: 10px;
-}
 .bar{
     height: 3px;
     background-color: black;
     border-radius: 2px;
 }
-.hamburger span:nth-child(2){
-    width: 80px;
-    margin: 0;
+.show-nav{
+    display: flex;
 }
 img{
     height: 500px;

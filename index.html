@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Interiors</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu(){
+            const nav =
+            document.getElementById("nav-links");
+            nav.classList.toggle(hidden);
+        }
+    </script>
 </head>
 <body>
     <header>
- <nav class="navbar">
-    <div class="menu-toggle" id="mobile-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>  
-    </div>
-    <nav id="nav-links" class="hidden">
-        <a href="home.html">home</a>
-        <a href="about us.html">About us</a>
-        <a href="service.html">service</a>
-    </nav>
-        <ul class="nav-link">
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+ <nav  id="nav-link" class="navbar">
+        <ul>
             <li> <a href="#">Home</a></li>
             <li><a href="about us.html">About us</a></li>
             <li><a href="service.html"> service</a></li>
@@ -35,5 +31,6 @@
     </nav>
     <img src="./image/img.jpeg" alt="img">
 </header>
+     <script src="java.js"></script>
 </body>
 </html>

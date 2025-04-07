@@ -9,21 +9,29 @@
 <body>
     <header>
  <nav class="navbar">
+    <div class="menu-toggle" id="mobile-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>  
+    </div>
+    <nav id="nav-links" class="hidden">
+        <a href="home.html">home</a>
+        <a href="about us.html">About us</a>
+        <a href="service.html">service</a>
+    </nav>
         <ul class="nav-link">
             <li> <a href="#">Home</a></li>
             <li><a href="about us.html">About us</a></li>
             <li><a href="service.html"> service</a></li>
             
         </ul>
-        <script>
-            const hamburger =
-            document.querySelector('.hamburger');
-            const navmenu = 
-            document.querySelector('.nav-link');
-            hamburger.addEventListener('click', () => {
-            navmenu.classList.toggle('active');
-        });
-        </script>
+        
     </nav>
     <img src="./image/img.jpeg" alt="img">
 </header>

@@ -43,14 +43,42 @@ h2{
     display: none;
     flex-direction: column;
     cursor: pointer;
+    border: none;
+    height: 20px;
+    background-color: transparent;
 }
 .hamburger span{
     width: 30px;
     height: 3px;
     background: white;
-    margin: 5px;
+    display: block;
     transition:0.3s ease-in-out;
 
+}
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    gap: 6px;
+    margin: 10px;
+    background-color: aqua;
+}
+.hidden{
+    display: none;
+}
+#nav-links{
+    display: flex;
+    gap: 10px;
+}
+.bar{
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
+.hamburger span:nth-child(2){
+    width: 80px;
+    margin: 0;
 }
 img{
     height: 500px;

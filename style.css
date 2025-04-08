@@ -50,21 +50,21 @@ h2{
     text-decoration: underline;
 }
 .hamburger{
-    display: none;
-    flex-direction: column;
+    display: block;
+
     cursor: pointer;
     width: 30px;
-    gap: 6px;
-    margin: 10px;
-    background-color: aqua;
+    
 }
 .bar{
     height: 3px;
     background-color: black;
     border-radius: 2px;
+    margin: 5px 0;
+    width: 100%;
 }
-.show-nav{
-    display: flex;
+.hidden{
+    display:none;
 }
 img{
     height: 500px;

@@ -20,8 +20,22 @@ body {
     display: inline-block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-
+.iii strong{
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.iii p{
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+.iii ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
 header {
     position: relative;
     padding: 10px;

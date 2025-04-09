@@ -90,7 +90,17 @@ img {
     width: 100%;
     filter: brightness(1);
 }
-
+h1{
+    color: #007acc;
+}
+.about1{
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .home-img {
     display: flex;
     flex-wrap: wrap;

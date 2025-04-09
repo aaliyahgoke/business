@@ -93,13 +93,24 @@ img {
 h1{
     color: #007acc;
 }
-.about1{
+.about-section{
     max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+    margin: 80px auto;
+    background-color: #ffffffff;
+    padding: 80px;
+    border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-section h1{
+    font-size: 2.8rem;
+    color: #1e3d;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.about-section p{
+    font-size: 1.15em;
+    line-height: 1.8;
+    margin-bottom: 25px;
 }
 .home-img {
     display: flex;

@@ -11,17 +11,20 @@ body {
 }
 
 
-    
+.both{
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+} 
 .iii{
-    background-color: grey;
+     background: gray;
     padding: 20px;
     width: 250px;
     border-radius: 10px;
     display: inline-block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 .iii strong{
     display: block;
@@ -35,6 +38,7 @@ body {
 .iii ul{
     list-style-type: disc;
     padding-left: 20px;
+ 
 }
 header {
     position: relative;
@@ -55,6 +59,7 @@ h2 {
     justify-content: flex-end;
     margin-bottom: 15px;
 }
+
 
 .navbar ul {
     list-style: none;

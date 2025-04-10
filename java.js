@@ -1,20 +1,7 @@
-document.queryselectorAll('.read-more-btn').forEach(button=>{
-    button.addEventListener('click',()=>{
-        const contentBox =button.parentElement;
-        const fullText =
-        contentBox.queryselector('full-text');
-
-        if(fullText.style.display===
-     "none" || fullText.style.display ==="") {
-              fulllText.stlye.display =
-     
-    "block";    
-    } else {
-        fullText.stlye.display = "none";
-    }
-});
-});
-function toggleMenu() {
-    const nav = document.getElementById("nav-links")
-    nav.classList.toggle("hidden")
+//get the div for the ham menu
+const HamburgerMenu = document.getElementById("hamB");
+//event listern to notify when is clicked
+HamburgerMenu.onclick= function togglemenu(){
+    const nav = document.getElementById("navlinks");
+    nav.classList.toggle("show");
 }

@@ -240,7 +240,112 @@ h1 {
 .text img:hover {
     transform: scale(1.1);
 }
-
+.header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .contact-info div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .contact-info h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            color: #666;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .hamburger{
+            width: 30px;
+            height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .line{
+            height: 5px;
+            background-color: rgb(211, 231, 215);
+            border-radius: 5px;
+        }
+        .hidden-nav{
+            display:none ;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .hidden-nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        .hidden-nav ul li{
+            margin: 10px 0;
+        }
+        .hidden-nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hidden-nav ul li a:hover{ 
+            text-decoration: underline;
+        }
+        .show-nav{
+            display: flex;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -268,9 +373,7 @@ h1 {
         color: white;
     }
 
-    .hamburger {
-        display: flex;
-    }
+  
 
     .service-container {
         flex-direction: column;

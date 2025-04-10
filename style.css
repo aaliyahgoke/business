@@ -11,34 +11,33 @@ body {
 }
 
 
-.both{
+.about-service-container{
+  
     justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+    padding: 20px;
     align-items: center;
-    align-items: center;
-
-} 
-.iii{
-     background: gray;
+}
+#section{
+    color: black;
+    background-color: whitesmoke;
     padding: 20px;
     width: 250px;
     border-radius: 10px;
-    display: inline-block;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
-.iii strong{
-    display: block;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-.iii p{
-    font-size: 1.1em;
-    line-height: 1.6em;
-}
-.iii ul{
-    list-style-type: disc;
-    padding-left: 20px;
- 
+#section2{
+    color: black;
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; 
 }
 header {
     position: relative;

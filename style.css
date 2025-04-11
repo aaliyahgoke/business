@@ -111,6 +111,7 @@ h2 {
     color: black;
     font-weight: bold;
     transition: color 0.3s ease;
+
 }
 
 .navbar2 ul li a:hover {
@@ -230,16 +231,7 @@ h1 {
     font-size: 14px;
     transition: all 0.3s ease;
 }
-/*.me{
-    background: gray;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    display: flex;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    align-items: right;
-    justify-content: right;  */
+
 
 .Read-more-btn:hover {
     background-color: deepskyblue;
@@ -247,17 +239,15 @@ h1 {
 }
 
 /* Text Styling */
-.text p {
-    font-size: 16px;
-    color: #333;
-}
+
 
 .text img {
-    width: 200px;
-    height: auto;
+    width: 400px;
+    height:400px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    
 }
 
 .text img:hover {

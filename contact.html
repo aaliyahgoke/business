@@ -3,8 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contant Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            text-align: center;
+            padding: 20px;
+        }
+        p{
+            color: antiquewhite;
+        }
+        .contact{
+            padding: 20px;
+            max-width: 40px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+            background-color: white;
+        }
+        input, textarea{
+            width: 100px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            background-color:lightskyblue ;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: lightskyblue;
+        }
+        .social-icons{
+            margin-top: 20px;
+        }
+        .social-icons a{
+            text-decoration: none;
+            margin: 0 10px;
+            color: lightskyblue;
+        }
+        .social-icons a:hover{
+            color: lightskyblue;
+        }
+        .loading{
+            display: none;
+            margin-top: 20px;
+        }
+        .spinner{
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #007bff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin{
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg);}
+        }
+    </style>
 </head>
 <body>
     <nav  id="nav" class="navbar">
@@ -32,8 +97,30 @@
      <div class="social-icons"> 
         <p>Phone: +2348158373332</p>
         <p>Email: aaliyahadegoke@gmail.com</p>
-
+        <a href="https://wa.me/2348158373332" target="_blank">
+            <i class="fab fa-whatsapp"></i> Contact on whatsApp
+        </a>
      </div>
   </div>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // prevent form submission
+        showLoading(); // show the loading spinner
+        
+        // Simulate an asychronous form submission using fetch
+        setTimeout(function() {
+            // After a successful "submission"; hide the spinner
+            document.getElementById("loadingMessage").style.display = "none";
+            alert("Message submitted successfully!");
+            document.getElementById("contactForm").reset(); // optionally reset the form
+        }, 2000); // Simulate a delay (e.g., 2 seconds)
+    });
+
+    function showLoading() {
+        // Hide the form and show the loading spinner
+        document.getElementById("contactForm").style.display = "none";
+        document.getElementById("loadingMessage").style.display = "block"; 
+    }
+  </script>
 </body>
 </html>

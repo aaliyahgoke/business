@@ -1,5 +1,4 @@
-function toggleMenu() {
-    const nav = document.getElementById("hiddenNav");
-    nav.classList.toggle("show-nav");
+function togglemenu() {
+    const hiddenNav = document.getElementById('hiddenNav');
+    hiddenNav.classList.toggle('show-nav');
 }
-event.preventDefault();

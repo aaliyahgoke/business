@@ -98,6 +98,29 @@ h2 {
 .navbar li {
     display: inline;
 }
+.navbar2{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+} 
+.navbar2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar2 ul li a:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+.navbar2 li {
+    display: inline;
+}
 
 
 h1 {

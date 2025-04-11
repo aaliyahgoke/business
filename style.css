@@ -16,16 +16,6 @@
    
 }
 
-
-.about-service-container{
-    margin: 20px;
-    justify-content: center;
-    gap: 200px;
-    flex-wrap: wrap;
-    padding: 20px;
-    align-items: center;
-    padding: 20px;
-}
 #section{
     color: black;
     background-color: whitesmoke;
@@ -225,6 +215,8 @@ h1 {
     display: inline-block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    /* align-items: right;
+    justify-content: right;  */
 }
 .Read-more-btn:hover {
     background-color: deepskyblue;

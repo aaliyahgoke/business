@@ -3,155 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact Form - Royal Interior</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
-        body{
+        /* General Styles */
+        body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: aliceblue;
             text-align: center;
             padding: 20px;
+            margin: 0;
         }
-        p{
+
+        p {
             color: black;
+            margin: 5px 0;
         }
-    
-.navbar2 ul {
-    list-style: none;
- 
-    display: flex;
-    gap: 30px;
-}
 
-.navbar2 a {
-    text-decoration: none;
-    color: rgb(50, 36, 154);
-    font-weight: bold;
-    transition: color 0.3s ease;
-    align-items: center;
-    justify-content: center;
-}
+        /* Navbar Styles */
+        .navbar2 ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
 
-.navbar2 ul li a:hover {
-    color: rgb(33, 179, 38);
-    text-decoration: underline;
-    align-items: center;
-    justify-content: center;
-}
+        .navbar2 a {
+            text-decoration: none;
+            color: rgb(50, 36, 154);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
 
-.navbar2 li {
-    display: inline;
-    align-items: center;
-    justify-content: center;
-}
+        .navbar2 a:hover {
+            color: rgb(33, 179, 38);
+            text-decoration: underline;
+        }
 
-        .contact{
+        /* Contact Form Styles */
+        .contact {
             padding: 20px;
             max-width: 500px;
             margin: auto;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-       
             background-color: white;
         }
-        input, textarea{
+
+        input, textarea {
             width: 100%;
-           
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 16px;
         }
-        button{
-            background-color:lightskyblue ;
+
+        button {
+            background-color: lightskyblue;
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
         }
-        button:hover{
+
+        button:hover {
             background-color: dodgerblue;
         }
-        .social-icons{
+
+        /* Social Icons Styles */
+        .social-icons {
             margin-top: 20px;
         }
-        .social-icons a{
+
+        .social-icons a {
             text-decoration: none;
             margin: 0 10px;
             color: lightskyblue;
+            transition: color 0.3s ease;
         }
-        .social-icons a:hover{
+
+        .social-icons a:hover {
             color: dodgerblue;
         }
-        .loading{
+
+        /* Loading Spinner Styles */
+        .loading {
             display: none;
             margin-top: 20px;
         }
-        .spinner{
+
+        .spinner {
             border: 4px solid #f3f3f3;
             border-top: 4px solid #007bff;
             border-radius: 50%;
             width: 40px;
             height: 40px;
             animation: spin 2s linear infinite;
+            margin: auto;
         }
-        @keyframes spin{
-            0% { transform: rotate(0deg);}
-            100% { transform: rotate(360deg);}
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
-    <nav  id="nav1" class="navbar2">
+    <!-- Navigation Bar -->
+    <nav id="nav1" class="navbar2">
         <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li><a href="about us.html">About us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
-           
-            
         </ul>
-        
     </nav>
-  <div class="contact"> 
-  <h2> Royal Interior</h2>
-  <form id="contactform">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
-<div class="loading" id="loadingMessage">
-    <p>submitting your message...</p>
-    <div class="spinner"></div>
-</div>
-     <div class="social-icons"> 
-        <p>Phone: +2348158373332</p>
-        <p>Email: aaliyahadegoke@gmail.com</p>
-        <a href="https://wa.me/2348158373332" target="_blank">
-            <i class="fab fa-whatsapp"></i> Contact on whatsApp
-        </a>
-     </div>
-  </div>
-  <script>
-    document.getElementById("contactform").addEventListener("submit", function(event) {
-        event.preventDefault(); // prevent form submission
-        showLoading(); // show the loading spinner
-        
-        // Simulate an asynchronous form submission using setTimeout
-        setTimeout(function() {
-            // After a successful "submission"; hide the spinner
-            document.getElementById("loadingMessage").style.display = "none";
-            alert("Message submitted successfully!");
-            document.getElementById("contactform").reset(); // reset the form
-        }, 2000); // Simulate a delay (e.g., 2 seconds)
-    });
 
-    function showLoading() {
-        // Hide the form and show the loading spinner
-        document.getElementById("contactform").style.display = "none";
-        document.getElementById("loadingMessage").style.display = "block"; 
-    }
-  </script>
+    <!-- Contact Form Section -->
+    <div class="contact">
+        <h2>Royal Interior</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="loading" id="loadingMessage">
+            <p>Submitting your message...</p>
+            <div class="spinner"></div>
+        </div>
+        <div class="social-icons">
+            <p>Phone: +2348158373332</p>
+            <p>Email: aaliyahadegoke@gmail.com</p>
+            <a href="https://wa.me/2348158373332" target="_blank">
+                <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Add event listener for form submission
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            showLoading(); // Show loading spinner
+
+            // Simulate an asynchronous form submission using setTimeout
+            setTimeout(function() {
+                hideLoading(); // Hide the loading spinner
+                alert("Message submitted successfully!");
+                document.getElementById("contactForm").reset(); // Reset the form
+            }, 2000); // Simulate a delay (e.g., 2 seconds)
+        });
+
+        // Function to show the loading spinner
+        function showLoading() {
+            document.getElementById("contactForm").style.display = "none";
+            document.getElementById("loadingMessage").style.display = "block";
+        }
+
+        // Function to hide the loading spinner
+        function hideLoading() {
+            document.getElementById("loadingMessage").style.display = "none";
+            document.getElementById("contactForm").style.display = "block";
+        }
+    </script>
 </body>
 </html>

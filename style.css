@@ -138,7 +138,7 @@ h1 {
 
 .about-section h1 {
     font-size: 2.8rem;
-    color: #1e3d;
+    color: black;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -230,17 +230,17 @@ h1 {
     font-size: 14px;
     transition: all 0.3s ease;
 }
-.me{
+/*.me{
     background: gray;
     padding: 20px;
     width: 250px;
     border-radius: 10px;
-    display: inline-block;
+    display: flex;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    /* align-items: right;
+    align-items: right;
     justify-content: right;  */
-}
+
 .Read-more-btn:hover {
     background-color: deepskyblue;
     transform: scale(1.05);
@@ -264,48 +264,48 @@ h1 {
     transform: scale(1.1);
 }
 .header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-        }
-        .contact-info div {
-            flex: 1;
-            margin: 0 10px;
-        }
-        .contact-info h3 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .contact-info p {
-            color: #666;
-        }
-        .form-container {
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .form-container h2 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+   background-color: #333;
+    color: white;
+     padding: 10px 0;
+     text-align: center;
+}
+.container {
+     width: 80%;
+     margin: 0 auto;
+    padding: 20px 0;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contact-info div {
+    flex: 1;
+    margin: 0 10px;
+ }
+.contact-info h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.contact-info p {
+   color: #666;
+}
+.form-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+ }
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
         button {
             padding: 10px 20px;
             background-color: #333;

@@ -109,6 +109,7 @@ h2 {
 .navbar2 a {
     text-decoration: none;
     color: black;
+   padding: 1rem;
     font-weight: bold;
     transition: color 0.3s ease;
 
@@ -157,9 +158,9 @@ h1 {
     padding: 2px;
    
     margin: auto;
-    width: 100px;
+    width: 100%;
     max-width: 700px;
-    height: auto;
+    height:100%;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;

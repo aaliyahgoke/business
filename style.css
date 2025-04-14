@@ -155,7 +155,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    padding: 20px;
+    padding: 15px;
     align-items: center;
     margin: auto;
     width: 100%;
@@ -165,6 +165,7 @@ h1 {
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
     margin-top: 10px;
+   
 }
 
 .home-img:hover {
@@ -174,13 +175,14 @@ h1 {
 
 .text {
     align-items: center;
-    background-color: white;
+    background-color: snow;
     width: 90%;
     max-width: 600px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    justify-content: center;
 }
 
 /* Service Section */
@@ -318,7 +320,7 @@ input, textarea {
         }
         .line{
             height: 5px;
-            background-color: rgb(211, 231, 215);
+            background-color:whitesmoke;
             border-radius: 5px;
         }
         .hidden-nav{

@@ -184,6 +184,23 @@ h1 {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.custom-img .text img{
+   gap: 2rem;
+}
+.custom-img{
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px; 
+}
+.office-img{
+   
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px; 
+}
 .text {
  
      

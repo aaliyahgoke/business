@@ -15,6 +15,9 @@
    
    
 }
+.nav-link{
+    background-color: hotpink;
+}
 
 #section{
     color: black;
@@ -41,11 +44,15 @@ a{
     color: black;
 }
 header {
-    position: relative;
-    padding: 10px;
-    background-color: rgb(96, 81, 216);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: transparent;
+    
+   
 }
+
+
 
 h2 {
     display: flex;
@@ -284,12 +291,12 @@ h1 {
 .text img:hover {
     transform: scale(1.1);
 }
-.header {
+/* .header {
    background-color: #333;
     color: white;
      padding: 10px 0;
      text-align: center;
-}
+} */
 .container {
      width: 80%;
      margin: 0 auto;

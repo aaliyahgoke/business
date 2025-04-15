@@ -44,10 +44,20 @@ a{
     color: black;
 }
 header {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: transparent;
+    background-color: rgba(245, 245, 245, 0.6); /* Smoky white with transparency */
+    backdrop-filter: blur(5px); /* Optional: adds a glassy blur effect */
+    position: sticky;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Add any other styling here */
+
+  
+    
+    
     
    
 }
@@ -64,7 +74,9 @@ h2 {
 .navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; overflow: auto;
+    white-space: nowrap;
+    
 
 }
 
@@ -95,6 +107,7 @@ h2 {
     color: whitesmoke;
     font-weight: bold;
     transition: color 0.3s ease;
+    padding: 14px;
 }
 
 .navbar ul li a:hover {

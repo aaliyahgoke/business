@@ -10,13 +10,56 @@
 
   <!-- Header Section -->
   <header>
+    
     <!-- Search Bar -->
      <form action="index.html"  method="get" class="search-form">
      <input type="text" name="query" placeholder="search..." required /> 
      <button type="submit" class="but">Search</button>
      </form>
      <div class="this">
-      <button class="scroll-left">&#9664;</button> <!-- ◀ -->
+      
+      <style>
+        .container {
+          display: inline-block;
+          cursor: pointer;
+        }
+        
+        .bar1, .bar2, .bar3 {
+          width: 35px;
+          height: 5px;
+          background-color: #333;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+        
+        .change .bar1 {
+          transform: translate(0, 11px) rotate(-45deg);
+        }
+        
+        .change .bar2 {opacity: 0;}
+        
+        .change .bar3 {
+          transform: translate(0, -11px) rotate(45deg);
+        }
+        </style>
+        </head>
+        <body>
+        
+     
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        
+        <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        </script>
+        
+        </body>
+      
       <div class="navbar" >
          
         <a href="index.html">Home</a>
@@ -38,11 +81,11 @@
         
       </div>
       
-      <button class="scroll-right">&#9654;</button> <!-- ▶ -->
+      
    </div>
    
   </header>
-
+    
   <!-- Main Content -->
   <div class="INTERIOR">
     <h1 class="word"><strong>ROYAL INTERIOR</strong></h1> 

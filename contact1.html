@@ -9,85 +9,123 @@
         /* General Styles */
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: aliceblue;
+            background-color: #B1ACA8;
             text-align: center;
             padding: 20px;
             margin: 0;
         }
+        .navbar {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    color: #333;
+    flex-grow: 1;
+    padding: 15px;
+     align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
 
         p {
             color: black;
             margin: 5px 0;
         }
 
-        /* Navbar Styles */
-        .navbar2 ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 20px;
-        }
+       
+        header {
+    background-color: rgba(245, 245, 245, 0.6); /* Smoky white with transparency */
+    backdrop-filter: blur(5px); /* Optional: adds a glassy blur effect */
+    position: sticky;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Add any other styling here */
 
-        .navbar2 a {
-            text-decoration: none;
-            color: rgb(50, 36, 154);
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
+  
+    
+    
+    
+   
+}
+.this{
+    display: flex;
 
-        .navbar2 a:hover {
-            color: rgb(33, 179, 38);
-            text-decoration: underline;
-        }
+    position: relative;
+   
+    overflow: hidden;
+}
+.navbar a {
+    text-decoration: none;
+    color:#333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 14px;
+    
+}
 
+       
         /* Contact Form Styles */
         .contact {
-            padding: 20px;
+            padding: 55px;
             max-width: 500px;
             margin: auto;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             background-color: white;
+            margin-bottom: 50px;
+            margin-top: 55px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-top: 10px;
         }
 
         input, textarea {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
+            margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
         }
 
         button {
-            background-color: lightskyblue;
+            background-color: slategrey;
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            margin-top: 15px;
         }
 
         button:hover {
-            background-color: dodgerblue;
+            background-color: grey;
         }
 
         /* Social Icons Styles */
         .social-icons {
             margin-top: 20px;
+            text-align: center;
         }
 
         .social-icons a {
             text-decoration: none;
             margin: 0 10px;
-            color: lightskyblue;
+            color: black;
             transition: color 0.3s ease;
         }
 
         .social-icons a:hover {
-            color: dodgerblue;
+            color: gray;
         }
 
         /* Loading Spinner Styles */
@@ -97,8 +135,8 @@
         }
 
         .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #007bff;
+            border: 4px solid gold;
+            border-top: 4px ;
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -110,32 +148,49 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-    </style>
+     </style>
+  
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav id="nav1" class="navbar2">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about us.html">About Us</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
+    <header>
+        <div class="this">
+      
+            <div class="navbar" >
+            <div>
+              
+            </div>
+              <a href="index.html">Home</a>
+              <a href="about us.html">About us</a>
+              <a href="service.html">Service</a>
+              <a href="contact1.html">Contact</a>
+              
+              
+            </div>
+    </header>
+    
     <!-- Contact Form Section -->
+     <br>
+    <main>
     <div class="contact">
         <h2>Royal Interior</h2>
         <form id="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
             <button type="submit">Send Message</button>
         </form>
+
         <div class="loading" id="loadingMessage">
             <p>Submitting your message...</p>
             <div class="spinner"></div>
         </div>
+
         <div class="social-icons">
             <p>Phone: +2348158373332</p>
             <p>Email: aaliyahadegoke@gmail.com</p>
@@ -144,28 +199,24 @@
             </a>
         </div>
     </div>
-
+    </main>
     <script>
-        // Add event listener for form submission
         document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
-            showLoading(); // Show loading spinner
+            event.preventDefault();
+            showLoading();
 
-            // Simulate an asynchronous form submission using setTimeout
             setTimeout(function() {
-                hideLoading(); // Hide the loading spinner
+                hideLoading();
                 alert("Message submitted successfully!");
-                document.getElementById("contactForm").reset(); // Reset the form
-            }, 2000); // Simulate a delay (e.g., 2 seconds)
+                document.getElementById("contactForm").reset();
+            }, 2000);
         });
 
-        // Function to show the loading spinner
         function showLoading() {
             document.getElementById("contactForm").style.display = "none";
             document.getElementById("loadingMessage").style.display = "block";
         }
 
-        // Function to hide the loading spinner
         function hideLoading() {
             document.getElementById("loadingMessage").style.display = "none";
             document.getElementById("contactForm").style.display = "block";

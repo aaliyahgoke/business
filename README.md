@@ -1,6 +1,6 @@
 
 Royal Interiors
-![alt text](image.png)
+![alt text](joy.jpeg)
 A stylish and responsive website for showcasing home and office interior designs.
 
 Features
